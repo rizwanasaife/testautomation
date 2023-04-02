@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-31T15:39:35 IST" name="Default suite" finished-at="2023-03-31T15:39:35 IST" duration-ms="97">
+    <groups>
+    </groups>
+    <test started-at="2023-03-31T15:39:35 IST" name="Default test" finished-at="2023-03-31T15:39:35 IST" duration-ms="97">
+      <class name="section11.testnginstall">
+        <test-method signature="helloWorld()[pri:0, instance:section11.testnginstall@2053d869]" started-at="2023-03-31T15:39:35 IST" name="helloWorld" finished-at="2023-03-31T15:39:35 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helloWorld -->
+        <test-method signature="helloWorld2()[pri:0, instance:section11.testnginstall@2053d869]" started-at="2023-03-31T15:39:35 IST" name="helloWorld2" finished-at="2023-03-31T15:39:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helloWorld2 -->
+      </class> <!-- section11.testnginstall -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
