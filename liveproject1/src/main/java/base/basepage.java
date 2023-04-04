@@ -18,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class basepage {
 	public static WebDriver driver;
-	private String url;
+	public String url;
 	private Properties prop;
 
 	public basepage() throws IOException {
@@ -33,15 +33,14 @@ public class basepage {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
-		} else if (prop.getProperty("browser").equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		} else {
-			System.setProperty("webdriver.edge.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\msedgedriver.exe");
-			driver = new EdgeDriver();
-		}
+		} 
+			  else if (prop.getProperty("browser").equals("firefox")) {
+			  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +
+			  "\\src\\main\\java\\drivers\\geckodriver.exe"); driver = new FirefoxDriver();
+			  } else { System.setProperty("webdriver.edge.driver",
+			  System.getProperty("user.dir") +
+			  "\\src\\main\\java\\drivers\\msedgedriver.exe"); driver = new EdgeDriver(); }
+			 
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
